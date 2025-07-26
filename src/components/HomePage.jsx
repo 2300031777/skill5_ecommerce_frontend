@@ -33,7 +33,7 @@ const HomePage = () => {
     <div className="container">
       {/* Header */}
       <div className="header">
-        <h1>E-Commerce KLU APP</h1>
+        <h1>KLU APP</h1>
         <div className="header-right">
           {isAuthenticated ? (
             <div className="profile-menu">
@@ -62,21 +62,11 @@ const HomePage = () => {
       {/* Sidebar */}
       <div className="sidebar">
         <ul>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-          <li>
-            <Link to="/computers">Computers</Link>
-          </li>
-          <li>
-            <Link to={isAuthenticated ? "/mobiles" : "/login"}>Mobiles</Link>
-          </li>
-          <li>
-            <Link to={isAuthenticated ? "/laptops" : "/login"}>Laptops</Link>
-          </li>
-          <li>
-            <Link to={isAuthenticated ? "/pendrives" : "/login"}>Pendrives</Link>
-          </li>
+          <li><Link to="/about-us">About Us</Link></li>
+          <li><Link to="/computers">Computers</Link></li>
+          <li><Link to={isAuthenticated ? "/mobiles" : "/login"}>Mobiles</Link></li>
+          <li><Link to={isAuthenticated ? "/laptops" : "/login"}>Laptops</Link></li>
+          <li><Link to={isAuthenticated ? "/pendrives" : "/login"}>Pendrives</Link></li>
         </ul>
       </div>
 
@@ -86,7 +76,7 @@ const HomePage = () => {
       </div>
 
       {/* Footer */}
-      <div className="footer">@ copyright E-Commerce</div>
+      <div className="footer">© 2025 KLU APP</div>
     </div>
   );
 };
